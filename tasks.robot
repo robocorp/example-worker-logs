@@ -1,14 +1,11 @@
 *** Settings ***
-Documentation       Template robot main suite.
-
-Library    RPA.FileSystem
-Library    Process
+Documentation       Robot to get Robocorp Workforce Agent application logs
+Library             RPA.Archive
 
 *** Variables ***
-${SOURCE}=     %{LOCALAPPDATA}${/}robocorp${/}workforce-agent${/}logs${/}worker-trace.log
-${TARGET}=     %{ROBOT_ARTIFACTS}${/}worker-trace.log
-${USERS}=      C:${/}Users
+${logs}=       %{LOCALAPPDATA}${/}robocorp${/}workforce-agent${/}logs
 
 *** Tasks ***
 Get WFA logs
-    Copy File    ${SOURCE}    ${TARGET}
+    Archive Folder With Zip   ${logs}     %{ROBOT_ARTIFACTS}${/}logs.zip
+    
