@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation       Robot to get Robocorp Workforce Agent application logs
+Documentation       Robot to get Robocorp Worker logs
 Library             RPA.Archive
 
 *** Variables ***

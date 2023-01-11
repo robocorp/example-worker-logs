@@ -1,6 +1,9 @@
 # Simple bot that shows how to collect log files from a target machine
 
-A simple bot that shows how to collect log files from a target machine in this case [Robocorp Workforce Agent](https://robocorp.com/docs/control-room/configuring-workforce/overview) logs
+A simple bot that shows how to collect log files from a target machine.
+In this case the target are the application logs for the Robocorp Worker that is running on a Winodws machine.
+
+For reference some details on different ways to setup Workers can be found [here](https://robocorp.com/docs/control-room/unattended/worker-setups)
 
 The bot shows how you can zip a log folder into the Robots artifact folder that get pushed to Robocorp Control Room.
 
